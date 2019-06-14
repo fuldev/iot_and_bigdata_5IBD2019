@@ -19,6 +19,14 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 
 # Explication du code 
 
-d'abord on définit DHT11 comme type de capteur :
+● d'abord on définit DHT11 comme type de capteur : 
+>		
+	○ #define DHTTYPE DHT11 
+  
+
+
+
+
+
 
 
