@@ -111,7 +111,7 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 	○  dtostrf(h, 6, 2, humidityTemp);  
 	          
 	
-● et finalement on affiche nos valeurs dans le navigateyr web avec le code html suivant :
+● et finalement on affiche nos valeurs dans le navigateur web avec le code html suivant :
 >		
 	○  client.println("<!DOCTYPE HTML>");
   
