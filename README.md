@@ -38,7 +38,7 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 >		
 	○     void setup() {
  
-  myservo.attach(D5);  // on attache notre servo moteur au pin D5
+        ○  myservo.attach(D5);  // on attache notre servo moteur au pin D5
 
   Serial.begin(115200);   // le begin faut le specifier dans le moniteur 
   delay(10);
