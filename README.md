@@ -86,7 +86,7 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 >		
 	○  float h = dht.readHumidity();  // on lit l'humidité
   
-        ○  float t = dht.readTemperature();   // on lit la température  avec l'unité Celsius
+     ○  float t = dht.readTemperature();   // on lit la température  avec l'unité Celsius
 	
 	○  float f = dht.readTemperature(true);   // on lit la température  avec l'unité Fahrenheit (isFahrenheit = true)
 
