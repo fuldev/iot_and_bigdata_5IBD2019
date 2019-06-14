@@ -36,37 +36,50 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 
 ● On définit le contenu de nore fonction setup de cette manière  : 
 >		
-	○     void setup() {
+	○  void setup() {
  
         ○  myservo.attach(D5);  // on attache notre servo moteur au pin D5
 
-  Serial.begin(115200);   // le begin faut le specifier dans le moniteur 
-  delay(10);
+        ○  Serial.begin(115200);   // le begin faut le specifier dans le moniteur 
+  
+        ○  delay(10);
 
-  dht.begin();
+        ○  dht.begin();
   
-  // là on se connecte au wifi
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);  
+        ○  // là on se connecte au wifi
+ 
+        ○  Serial.println();
   
-  WiFi.begin(ssid, password);  // on indique les paramètres de wifi déjà indiqués
+        ○  Serial.print("Connecting to ");
   
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
+        ○  Serial.println(ssid);  
   
-  // on lance notre web serveur
-  server.begin();
-  Serial.println("Web server running. Waiting for the ESP IP...");
-  delay(10000);
+        ○  WiFi.begin(ssid, password);  // on indique les paramètres de wifi déjà indiqués
   
-  //  on affiche notre ESP IP adresse
-  Serial.println(WiFi.localIP());
-}
+        ○  while (WiFi.status() != WL_CONNECTED) {
+  
+        ○  delay(500);
+      
+        ○  Serial.print(".");
+ 
+        ○  }
+	
+        ○ Serial.println("");
+  
+        ○  Serial.println("WiFi connected");
+  
+        ○  // on lance notre web serveur
+ 
+        ○  server.begin();
+  
+        ○ Serial.println("Web server running. Waiting for the ESP IP...");
+  
+        ○ delay(10000);
+  
+        ○ //  on affiche notre ESP IP adresse
+  
+        ○ Serial.println(WiFi.localIP());
+        ○ }
 
 
 
