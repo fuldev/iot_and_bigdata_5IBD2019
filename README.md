@@ -90,5 +90,26 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 	
 	○  float f = dht.readTemperature(true);   // on lit la température  avec l'unité Fahrenheit (isFahrenheit = true)
 
+  // Computes temperature values in Celsius + Fahrenheit and Humidity
+                    
+                         
+              
+                           
+                
+              
 
-
+● on calcule la tempértaure valeurs en Celsius + Fahrenheit and Humidity  :
+>		
+	○  hic = dht.computeHeatIndex(t, h, false); 
+  
+        ○  dtostrf(hic, 6, 2, celsiusTemp);
+	
+	○  float hif = dht.computeHeatIndex(f, h);
+	
+	○  dtostrf(hif, 6, 2, fahrenheitTemp); 
+	
+	○  dtostrf(h, 6, 2, humidityTemp);  
+	
+	
+	
+	
