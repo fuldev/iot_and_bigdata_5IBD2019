@@ -6,9 +6,6 @@ https://github.com/fuldev/iot_and_bigdata_5IBD2019/
 
 # Les dependances de notre projet
 
-ESP8266 Arduino:
-
-https://github.com/esp8266/Arduino#installing-with-boards-manager
 
 server.h    : à installer dans Gérer les les bibliothèques Arduino IDE 
 
