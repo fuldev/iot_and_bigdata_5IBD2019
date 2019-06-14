@@ -109,7 +109,30 @@ LOLIN(WEMOS) D1 R2 & mimi  : les types de carte qu'il faut spécifier dans Ardui
 	○  dtostrf(hif, 6, 2, fahrenheitTemp); 
 	
 	○  dtostrf(h, 6, 2, humidityTemp);  
+	          
 	
+● et finalement on affiche nos valeurs dans le navigateyr web avec le code html suivant :
+>		
+	○  client.println("<!DOCTYPE HTML>");
+  
+        ○  client.println("<html>");
 	
+	○  client.println("<head></head> <meta http-equiv='Content-Type' content='text/html'; charset='UTF-8' /> <style> body {                 ○ background-color: #fffff; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; }</style> <body><h1>ESP8266 - Plants             ○ System</h1><h3>Temperature in Celsius: ");
+	
+	○  client.println(celsiusTemp);
+	
+	○   client.println("*C</h3>"); 	
+	
+	○   client.println("<h3>Temperature in Fahrenheitt: ");
+	
+	○   client.println(fahrenheitTemp);
+	
+	○   client.println("*F</h3>");
+	
+	○   client.println("<h3>Humidity: ");
+	
+	○   client.println(humidityTemp);
+	
+	○   client.println("%</h3><h3>");
 	
 	
